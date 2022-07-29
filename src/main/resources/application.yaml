@@ -1,0 +1,11 @@
+cloud:
+  aws:
+    region:
+      static: us-east-1
+      auto: false
+    end-point:
+      uri: ${SQS_ENDPOINT}
+server:
+  error:
+    whitelabel:
+      enabled: false
