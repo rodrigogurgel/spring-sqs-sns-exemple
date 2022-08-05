@@ -3,9 +3,15 @@ cloud:
     region:
       static: us-east-1
       auto: false
-    end-point:
-      uri: ${SQS_ENDPOINT}
+    sns:
+      endpoint: ${SNS_ENDPOINT}
+    sqs:
+      endpoint: ${SQS_ENDPOINT}
 server:
   error:
     whitelabel:
       enabled: false
+
+test:
+  queue-name: spring-cloud-test-queue
+  topic-name: spring-cloud-test-topic
